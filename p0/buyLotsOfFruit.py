@@ -35,6 +35,7 @@ def buyLotsOfFruit(orderList):
         if price is None: 
             print(f"Erro: {fruit} not in price list")
             return None 
+        total += price * weight
     return total
 
 
