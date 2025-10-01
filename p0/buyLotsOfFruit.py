@@ -29,8 +29,14 @@ def buyLotsOfFruit(orderList):
     """
 
     # *** Your Code Here ***
+    total = 0.0 
+    for fruit, weight in orderList:
+        price = FRUIT_PRICES.get(fruit)
+        if price is None: 
+            print(f"Erro: {fruit} not in price list")
+            return None 
+    return total
 
-    return None
 
 def main():
     orderList = [
