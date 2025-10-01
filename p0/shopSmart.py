@@ -21,7 +21,15 @@ def shopSmart(orderList, fruitShops):
 
     # *** Your Code Here ***
 
-    return None
+    best_shop = None 
+    best_cost = float('inf')
+
+    for s in fruitShops: 
+        cost = s.getPriceOfOrder(orderList)
+        if cost < best_cost
+            best_cost = cost 
+            best_shop = s 
+    return best_shop
 
 def main():
     dir1 = {
